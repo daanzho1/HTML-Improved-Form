@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign Up Form</title>
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
+
 <body>
     <nav>
         Enter the Contest for the Vacation of a Lifetime
     </nav>
     <main>
-        <h2>Vacation Contest Sign-Up Form</h2>
+        <h2>Vacation Content Sign-Up Form</h2>
         <form method="GET" action="results.html">
             <div>
                 <label for="firstname">Your First Name</label>
@@ -33,8 +35,7 @@
                     <label for="city">Your City</label>
                     <input type="text" id="city" name="city">
                     <label for="state">Your State</label>
-                    <input list="state-list" id="state" name="state">
-                    <datalist id="state-list">
+                    <select name="state" id="state">
                         <option value="AK">Alaska</option>
                         <option value="AL">Alabama</option>
                         <option value="AR">Arkansas</option>
@@ -84,7 +85,7 @@
                         <option value="WI">Wisconsin</option>
                         <option value="WV">West Virginia</option>
                         <option value="WY">Wyoming</option>
-                    </datalist>
+                    </select>
                     <label for="zip">Your Zipcode</label>
                     <input type="text" id="zip" name="zip">
                 </div>
@@ -94,19 +95,19 @@
                 <legend>Your Preferences</legend>
                 <h3>Choose your location</h3>
                 <div>
-                    <input type="radio" id="aruba" name="location" value="Aruba" checked> 
+                    <input type="radio" id="aruba" name="location" value="Aruba">
                     <label for="aruba">Aruba</label>
                 </div>
                 <div>
-                    <input type="radio" id="japan" name="location" value="Japan"> 
+                    <input type="radio" id="japan" name="location" value="Japan">
                     <label for="japan">Japan</label>
                 </div>
                 <div>
-                    <input type="radio" id="reykjavik" name="location" value="Reykjavik"> 
+                    <input type="radio" id="reykjavik" name="location" value="Reykjavik">
                     <label for="reykjavik">Reykjavik</label>
                 </div>
                 <div>
-                    <input type="radio" id="new-zealand" name="location" value="New Zealand"> 
+                    <input type="radio" id="new-zealand" name="location" value="New Zealand">
                     <label for="new-zealand">New Zealand</label>
                 </div>
                 <div>
@@ -115,23 +116,23 @@
                 </div>
                 <h3>Please select any add-ons you'd like:</h3>
                 <div>
-                    <input type="checkbox" id="sauna" name="extras" value="Sauna Access" checked> 
+                    <input type="checkbox" id="sauna" name="extras" value="Sauna Access">
                     <label for="sauna">Sauna Access</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="hottub" name="extras" value="Hot Tub"> 
+                    <input type="checkbox" id="hottub" name="extras" value="Hot Tub">
                     <label for="hottub">In-Room Hot Tub</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="ocean" name="extras" value="Ocean View"> 
+                    <input type="checkbox" id="ocean" name="extras" value="Ocean View">
                     <label for="ocean">Ocean View</label>
                 </div>
                 <div>
-                    <input type="checkbox" id="drinks" name="extras" value="Drinks Package"> 
+                    <input type="checkbox" id="drinks" name="extras" value="Drinks Package">
                     <label for="drinks">All-inclusive Drinks Package</label>
                 </div>
             </fieldset>
-            
+
             <input type="submit" value="Enter the Contest!">
         </form>
     </main>
@@ -140,4 +141,5 @@
         <p>All images provided for free use via <a href="https://unsplash.com/">Unsplash.com</a> whose generous <a href="https://unsplash.com/license">license details can be found here</a>.</p>
     </footer>
 </body>
+
 </html>
